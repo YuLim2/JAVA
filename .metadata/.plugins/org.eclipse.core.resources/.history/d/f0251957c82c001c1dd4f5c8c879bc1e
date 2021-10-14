@@ -1,0 +1,20 @@
+package ch10;
+
+public class TakeTest {
+
+	public static void main(String[] args) {
+		
+		Person p1 = new Person("yesterdayMrchoi", 5000);
+		Person p2 = new Person("todayMrchoi", 20000);
+
+		Subway brown = new Subway(3);
+		Bus Bus7_2 = new Bus("7_2");
+		
+		p1.takeSubway(brown);
+		p1.takeBus(Bus7_2);
+		
+		p1.showInfo();
+		p2.showInfo();
+	}
+
+}

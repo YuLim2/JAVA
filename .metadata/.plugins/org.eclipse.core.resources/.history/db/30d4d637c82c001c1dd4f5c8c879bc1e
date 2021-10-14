@@ -1,0 +1,18 @@
+package ch10;
+
+public class Subway {
+	int number;
+	int money;
+	int passengerCount;
+	
+	public Subway(int number) {
+		this.number = number;
+	}
+	
+	public void take(int money) {
+		this.money += money;
+	}
+	public void showInfo() {
+		System.out.println(number+"호선의 잔액은 "+number+"이고 현재 승객 수는 "+passengerCount+"입니다.");
+	}
+}
